@@ -3,46 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>All Projects</title>
+  <title>Home | Project Store</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Unique Adiwal</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <div class="container">
-    <h1>All 2025 Projects</h1>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Buy & Explore 2025's Top Projects</h1>
+      <p>Find ready-to-use student & professional projects with code, app, and video preview.</p>
+      <a href="projects.html" class="btn">Browse All Projects</a>
+    </div>
+  </section>
 
-    <div class="card dropdown">
-      <h3 onclick="toggleDropdown(this)">AI Chatbot with Firebase ⬇️</h3>
-      <div class="dropdown-content">
-        <p><strong>Description:</strong> Smart chatbot using Firebase & Dialogflow</p>
-        <a href="https://video-link.com" target="_blank" class="btn">🎬 Video Preview</a>
-        <a href="pay.html" class="btn">💳 Pay Now</a>
-        <a href="apk-link.apk" class="btn">📥 Download App</a>
+  <!-- Popular Projects -->
+  <section class="popular-projects">
+    <div class="container">
+      <h2>🔥 Popular Projects 2025</h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>AI Chatbot with Firebase</h3>
+          <p>React Native | Firebase Auth</p>
+        </div>
+        <div class="card">
+          <h3>Medicine Recommender App</h3>
+          <p>ML | Android | SQLite</p>
+        </div>
+        <div class="card">
+          <h3>PrintEase App</h3>
+          <p>Java | Firebase | Admin Panel</p>
+        </div>
       </div>
     </div>
-
-    <div class="card dropdown">
-      <h3 onclick="toggleDropdown(this)">PrintEase Order App ⬇️</h3>
-      <div class="dropdown-content">
-        <p><strong>Description:</strong> Complete Photostat order management system</p>
-        <a href="https://preview.com" class="btn">🎬 Video Preview</a>
-        <a href="pay.html" class="btn">💳 Pay Now</a>
-        <a href="https://download.com/apk" class="btn">📥 Download App</a>
-      </div>
-    </div>
-  </div>
-
+  </section>
 
   <!-- Footer -->
-  <footer>
-    © 2025 Unique Adiwal | All rights reserved.
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Unique Adiwal. All rights reserved.</p>
+    </div>
   </footer>
+
 
   <script>
     function toggleDropdown(elem) {
