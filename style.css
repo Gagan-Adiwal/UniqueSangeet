@@ -87,6 +87,58 @@ nav a {
     flex-wrap: wrap;
   }
 
+
+  .about-section {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.owner-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-info {
+  max-width: 600px;
+  text-align: center;
+}
+
+.about-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.about-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-info {
+    max-width: 500px;
+    padding-left: 2rem;
+  }
+}
+
   .project-cards .card {
     width: calc(33.333% - 1rem);
   }
