@@ -143,14 +143,6 @@ nav a {
     max-width: 500px;
     padding-left: 2rem;
   }
-
-  .owner-photo {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
 }
 
 /* Footer */
