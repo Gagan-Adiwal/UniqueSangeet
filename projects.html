@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects</title>
+  <title>All Projects</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,15 +15,34 @@
   </nav>
 
   <div class="container">
-    <h1>Our Projects</h1>
-    <div id="card-container" class="card-container"></div>
-    <div class="pagination">
-      <button onclick="prevPage()">Prev</button>
-      <span id="page-num">1</span>
-      <button onclick="nextPage()">Next</button>
+    <h1>All 2025 Projects</h1>
+
+    <div class="card dropdown">
+      <h3 onclick="toggleDropdown(this)">AI Chatbot with Firebase ⬇️</h3>
+      <div class="dropdown-content">
+        <p><strong>Description:</strong> Smart chatbot using Firebase & Dialogflow</p>
+        <a href="https://video-link.com" target="_blank" class="btn">🎬 Video Preview</a>
+        <a href="pay.html" class="btn">💳 Pay Now</a>
+        <a href="apk-link.apk" class="btn">📥 Download App</a>
+      </div>
+    </div>
+
+    <div class="card dropdown">
+      <h3 onclick="toggleDropdown(this)">PrintEase Order App ⬇️</h3>
+      <div class="dropdown-content">
+        <p><strong>Description:</strong> Complete Photostat order management system</p>
+        <a href="https://preview.com" class="btn">🎬 Video Preview</a>
+        <a href="pay.html" class="btn">💳 Pay Now</a>
+        <a href="https://download.com/apk" class="btn">📥 Download App</a>
+      </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    function toggleDropdown(elem) {
+      const content = elem.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
