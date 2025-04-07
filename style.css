@@ -172,9 +172,10 @@ footer {
 }
 
 .contact-card h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: #007bff;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .contact-links {
@@ -190,11 +191,16 @@ footer {
   color: #333;
   font-weight: 500;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .contact-links a:hover {
   color: #007bff;
+  background: #eef6ff;
 }
 
 .contact-links img {
@@ -203,9 +209,29 @@ footer {
   margin-right: 12px;
 }
 
-@media (min-width: 600px) {
-  .contact-links {
-    flex-direction: row;
-    justify-content: space-around;
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 4rem 2rem;
+  }
+
+  .contact-card {
+    padding: 2.5rem 3rem;
+  }
+
+  .contact-card h3 {
+    font-size: 2rem;
+  }
+
+  .contact-links a {
+    font-size: 1.1rem;
+    padding: 1.2rem;
+  }
+
+  .contact-links img {
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
   }
 }
+
